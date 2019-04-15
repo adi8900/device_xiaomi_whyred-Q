@@ -23,6 +23,9 @@
 
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
