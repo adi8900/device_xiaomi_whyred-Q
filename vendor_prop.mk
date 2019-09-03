@@ -72,6 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth SoC
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Bluetooth WiPower
