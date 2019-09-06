@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_whyred.mk
+    $(LOCAL_DIR)/potato_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_whyred-userdebug \
-    lineage_whyred-eng
+    potato_whyred-userdebug \
+    potato_whyred-eng
 
