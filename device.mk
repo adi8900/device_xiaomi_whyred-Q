@@ -26,6 +26,10 @@ $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm660
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 

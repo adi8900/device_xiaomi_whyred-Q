@@ -29,7 +29,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 BOARD_VENDOR := xiaomi
-TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
 
 # Architecture
@@ -62,7 +61,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
 TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 
 # QCOM
-BOARD_USES_QCOM_HARDWARE := true
 TARGET_USE_SDCLANG := true
 
 # ANT+
