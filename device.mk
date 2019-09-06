@@ -38,8 +38,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -151,9 +151,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library
+#PRODUCT_PACKAGES += \
+#    AntHalService \
+#    com.dsi.ant.antradio_library
 
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
@@ -172,8 +172,8 @@ PRODUCT_PACKAGES += \
     services-ext
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
@@ -297,11 +297,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_whyred
-
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
+#
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -333,11 +329,11 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service-qti
+#PRODUCT_PACKAGES += \
+#    android.hardware.power@1.1-service-qti
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -347,7 +343,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
-
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -436,10 +431,6 @@ PRODUCT_PACKAGES += \
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
