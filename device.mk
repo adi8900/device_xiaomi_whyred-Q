@@ -171,9 +171,14 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Device mapper verity
+PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/cust
+$(call inherit-product, build/target/product/verity.mk)
+
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
